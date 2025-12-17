@@ -10,11 +10,7 @@ router.post('/cable', async (req, res) => {
             length: req.body.length,
             lengthUnit: req.body.lengthUnit,
             price: req.body.price,
-            connectorType: req.body.connectorType,
-            resolution: req.body.resolution,
-            availableStock: req.body.availableStock,
-            color: req.body.color,
-            warrantyMonths: req.body.warrantyMonths
+            color: req.body.color
         });
 
         const savedCable = await newCable.save();

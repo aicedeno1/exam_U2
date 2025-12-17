@@ -7,11 +7,7 @@ const hdmiCableSchema = new mongoose.Schema(
         length: {type: Number, required: true},
         lengthUnit: {type: String, required: true, default: 'meters'},
         price: {type: Number, required: true},
-        connectorType: {type: String, required: true},
-        resolution: {type: String, required: true},
-        availableStock: {type: Number, required: true},
-        color: {type: String, required: true},
-        warrantyMonths: {type: Number, required: true, default: 12}
+        color: {type: String, required: true}
     },
     {
         collection: 'HDMI_Cable',
